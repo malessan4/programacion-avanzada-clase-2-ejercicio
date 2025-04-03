@@ -25,6 +25,9 @@ class Estudiante(Persona):
         print(f'DNI: {self.dni}')
         print(f'Legajo: {self.legajo}')
         print(f'Carrera: {self.carrera}')
+        
+    def cambiar_carrera (self, nueva_carrera):
+        self.carrera = nueva_carrera
 
 print()        
 persona1 = Persona('Marcos', 'Sanchez', 8143859)
@@ -38,3 +41,8 @@ persona3.mostrar_estudiante()
 print()
 persona4 = Estudiante('Ailen', 'Rivero', '34954334', '8713', 'Tecnicatura en Programación')
 persona4.mostrar_estudiante()
+
+persona4.cambiar_carrera ("contador")
+persona4.mostrar_estudiante()
+
+
